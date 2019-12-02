@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +13,19 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
 
+
+
 </head>
 <body>
     <div class="top-nav-bar">
         <div class="search-box">
+                <i class="fa fa-bars"  id="menu-btn" onclick="openmenu()"></i>
+                <i class="fa fa-times" id="close-btn" onclick="closemenu()"></i>
             <img class="logo" src="images/logo.jpg" >
             <input type="text" class="form-control">
             <span class="input-group-text"><i class="fa fa-search" ></i></span>
         </div>
+        
         <div class="menu-bar">
             <ul>
                 <li><a href="#"><i class="fa fa-shopping-cart"></i>Cart</a></li>
@@ -29,14 +35,68 @@
         </div>
     </div>
     <section class="header">
-        <div class="side-menu">
+        <div class="side-menu" id="side-menu">
             <ul>
-                <li>on sale <i class="fa fa-angle-right" ></i></li>
-                <li>Mobiles <i class="fa fa-angle-right" ></i></li>
-                <li>Computers <i class="fa fa-angle-right" ></i></li>
+                <li>on sale <i class="fa fa-angle-right" ></i>
+                <ul>
+                    <li>sub-menu 1</li>
+                    <li>sub-menu 1</li> 
+                    <li>sub-menu 1</li>
+                    <li>sub-menu 1</li>
+                </ul>
+                </li>
+                <li>Mobiles <i class="fa fa-angle-right" ></i>
+                <ul>
+                    <li>sub-menu 2</li>
+                    <li>sub-menu 2</li>
+                    <li>sub-menu 2</li>
+                    <li>sub-menu 2</li>
+                </ul>
+                </li>
+                <li>Computers <i class="fa fa-angle-right" ></i>
+                <ul>
+                    <li>sub-menu 3</li>
+                    <li>sub-menu 3</li>
+                    <li>sub-menu 3</li>
+                    <li>sub-menu 3</li>
+                </ul>
+                </li>
             </ul>
         </div>
+        <div class="slider">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/slide1.jpg" class="d-block w-100" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide2.jpg" class="d-block w-100" >
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/slide3.jpg" class="d-block w-100" >
+                  </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+              </div>
+        </div>
     </section>
+    <script>
+        function openmenu(){
+            document.getElementById("side-menu").style.display="block";
+            document.getElementById("menu-btn").style.display="none";
+            document.getElementById("close-btn").style.display="block";
+        }
+        function closemenu(){
+            document.getElementById("side-menu").style.display="none";
+            document.getElementById("menu-btn").style.display="block";
+            document.getElementById("close-btn").style.display="none";
+        }
+    </script>
     
 </body>
+
 </html>
