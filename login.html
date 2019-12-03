@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ body{
+	margin: 0 auto;
+	background-image: url("images/loginbackground.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 720px;
+}
+ 
+.login{
+	width: 500px;
+	height: 550px;
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(44, 62, 80,0.7);
+	margin-top: 125px;
+}
+ 
+.login img{
+	width: 150px;
+	height: 150px;
+	margin-top: -40px;
+}
+ 
+input[type="text"],input[type="password"]{
+    
+    margin-top: 30px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+}
+ 
+
+.btn-success{
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}
+
+    </style>
+</head>
+<body>
+    <div class="login">
+        <img class="avatar" src="images/avatar.jpg">
+        
+        <form action="#" method="POST">
+            <h2>Login</h2>
+            
+            <p>
+                <i class="fa fa-user" aria-hidden="true"></i>
+               
+                <input type="text" name="username" placeholder="Enter your Email" required>
+            </p>
+            
+            <p>
+                <i class="fa fa-lock" ></i>
+                <input type="password" name="password" placeholder="Enter your Password" required>
+            </p>
+            <p><a href="#" style="color: greenyellow;font-size:18px;">forgot password?</a></p>
+            <p><button type="submit" class="btn btn-success">Login</button></p>
+            
+        </fieldset>
+
+        </form>
+    </div>
+    
+</body>
+</html>
